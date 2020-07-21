@@ -2,7 +2,6 @@ var queryURL = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_we
 
 d3.json(queryURL).then(function(data){
     createFeatures(data.features);
-    createLegend()
 });
 
 var myMap = L.map("map", {
